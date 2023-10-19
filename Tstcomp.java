@@ -17,6 +17,20 @@ public class Tstcomp {
        Pc p1 = new Pc();
        Notebook n1 = new Notebook();
        Quantico q1 =  new Quantico();
+
+
+        try{
+                   p1.setAno_compra(Integer.parseInt("\nAno de compra: "));
+
+        }
+        catch{
+            
+        }
+
+
+
+
+
        
        p1.setCPU(l.ColetaD("\nCPU: "));
        p1.setPlaca_video(l.ColetaD("\nPlaca de video: "));
@@ -36,7 +50,6 @@ public class Tstcomp {
        Energia bat = new Energia(potencia, voltagem);
        
        p1.setMarca(l.ColetaD("\nMarca:"));
-       p1.setAno_compra(Integer.parseInt("\nAno de compra: "));
        
        
        

@@ -38,8 +38,12 @@ public abstract class Computador {
     }
 
     public void setAno_compra(int ano_compra) throws AnoException{
-            if(4 >= ano_compra.lenght){
+            if(tam_ano > 4 || tam_ano < 4){
                 System.out.println("O ano deve ter 4 digitos");
+                throw new AnoException;
+            }
+            else{
+                this.ano_compra = ano_compra;
             }
         }
 

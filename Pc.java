@@ -55,13 +55,8 @@ public final class Pc extends Computador implements Preco{
     //interface implementada
     @Override
     public double calculadora() {
-        return 0;
+        tam_ano = ano_compra.lenght();
     }
-    
-    
-    
-  
-
-    
+ 
     
 }
